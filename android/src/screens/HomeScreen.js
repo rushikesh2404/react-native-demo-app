@@ -1,12 +1,23 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import {View, Text, ImageBackground, StyleSheet} from 'react-native';
+import Banner from '../components/Homepage/banner';
+import TopProducts from '../components/Homepage/TopProducts';
 
 const Home = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <View style={styles.container}>
+        <Banner />
+      </View>
+      <TopProducts />
     </View>
   );
 };
 
 export default Home;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
